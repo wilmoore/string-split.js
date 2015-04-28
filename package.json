@@ -1,6 +1,6 @@
 {
   "name": "string-split",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "String.prototype.split as a curried function.",
   "main": "index.js",
   "scripts": {
