@@ -15,20 +15,26 @@ npm install string-split --save
 
 ###### Require
 
-    var split = require('string-split');
+```js
+var split = require('string-split');
+```
 
 ###### Equivalent to "example.com".split(".")
 
-    split(".", "example.com");
-    //=> ["example", "com"]
+```js
+split(".", "example.com");
+//=> ["example", "com"]
+```
 
 ###### Transform a list with a custom split pattern
 
-    var transform = split("::");
-    var foodtypes = ["Entree::Seafood", "Entree::Chicken"];
+```js
+var transform = split("::");
+var foodtypes = ["Entree::Seafood", "Entree::Chicken"];
 
-    foodtypes.map(transform);
-    //=> [ ["Entree", "Seafood"], ["Entree", "Chicken"] ]
+foodtypes.map(transform);
+//=> [ ["Entree", "Seafood"], ["Entree", "Chicken"] ]
+```
 
 ## License
 
