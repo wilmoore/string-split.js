@@ -1,10 +1,15 @@
 # string-split
-
-[![Code Climate](https://codeclimate.com/github/wilmoore/string-split.js/badges/gpa.svg)](https://codeclimate.com/github/wilmoore/string-split.js) [![Build Status](http://img.shields.io/travis/wilmoore/string-split.js.svg)](https://travis-ci.org/wilmoore/string-split.js) [![NPM version](http://img.shields.io/npm/v/string-split.svg)](https://www.npmjs.org/package/string-split) [![NPM downloads](http://img.shields.io/npm/dm/string-split.svg)](https://www.npmjs.org/package/string-split) [![LICENSE](http://img.shields.io/npm/l/string-split.svg)](license) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
-
 > String.prototype.split as a curried function.
 
-    $ npm install string-split --save
+[![Build Status](http://img.shields.io/travis/wilmoore/string-split.js.svg)](https://travis-ci.org/wilmoore/string-split.js) [![Code Climate](https://codeclimate.com/github/wilmoore/string-split.js/badges/gpa.svg)](https://codeclimate.com/github/wilmoore/string-split.js) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+
+```shell
+npm install string-split --save
+```
+
+###### npm stats
+
+[![npm](https://img.shields.io/npm/v/string-split.svg)](https://www.npmjs.org/package/string-split) [![NPM downloads](http://img.shields.io/npm/dm/string-split.svg)](https://www.npmjs.org/package/string-split) [![David](https://img.shields.io/david/wilmoore/string-split.js.svg)]() [![David](https://img.shields.io/david/dev/wilmoore/string-split.js.svg)]() 
 
 ## API Examples & Inspiration
 
@@ -27,5 +32,4 @@
 
 ## License
 
-  [MIT](license)
-
+[![GitHub license](https://img.shields.io/github/license/wilmoore/string-split.js.svg)]()
