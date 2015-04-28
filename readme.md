@@ -9,7 +9,7 @@ npm install string-split --save
 
 ###### npm stats
 
-[![npm](https://img.shields.io/npm/v/string-split.svg)](https://www.npmjs.org/package/string-split) [![NPM downloads](http://img.shields.io/npm/dm/string-split.svg)](https://www.npmjs.org/package/string-split) [![David](https://img.shields.io/david/wilmoore/string-split.js.svg)]() [![David](https://img.shields.io/david/dev/wilmoore/string-split.js.svg)]() 
+[![npm](https://img.shields.io/npm/v/string-split.svg)](https://www.npmjs.org/package/string-split) [![NPM downloads](http://img.shields.io/npm/dm/string-split.svg)](https://www.npmjs.org/package/string-split) [![Dependency Status](https://gemnasium.com/wilmoore/string-split.js.svg)](https://gemnasium.com/wilmoore/string-split.js)
 
 ## API Examples & Inspiration
 
