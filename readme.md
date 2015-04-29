@@ -38,4 +38,4 @@ foodtypes.map(transform);
 
 ## License
 
-[![GitHub license](https://img.shields.io/github/license/wilmoore/string-split.js.svg)]()
+[![GitHub license](https://img.shields.io/github/license/wilmoore/string-split.js.svg)](https://github.com/wilmoore/string-split.js/blob/master/license)
