@@ -1,7 +1,7 @@
 'use strict'
 
 /*!
- * exports.
+ * imports.
  */
 
 var curry2 = require('curry2')
