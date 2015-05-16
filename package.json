@@ -1,7 +1,7 @@
 {
   "name": "string-split",
   "description": "A curried `String.prototype.split` with support for splitting by String, RegExp, or Function.",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "bugs": {
     "url": "https://github.com/wilmoore/string-split.js/issues"
