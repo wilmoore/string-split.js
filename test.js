@@ -31,6 +31,21 @@ test('function returned', function (t) {
   t.assert(split(',').length === 1, 'with arity of 1')
 })
 
+test('predicate', function (t) {
+  t.plan(2)
+
+  function isNumber (chr, _) {
+    return !!Number(chr)
+  }
+
+  function odd (chr, idx) {
+    return idx % 2 !== 0
+  }
+
+  t.deepEqual(split(isNumber, '1Hello2World3'), ['Hello', 'World'], 'split on numeric character')
+  t.deepEqual(split(odd, 'AaBbCcDd'), ['A', 'B', 'C', 'D'], 'split on even index')
+})
+
 test('map', function (t) {
   t.plan(1)
 

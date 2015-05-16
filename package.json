@@ -1,12 +1,14 @@
 {
   "name": "string-split",
-  "description": "String.prototype.split as a curried function.",
+  "description": "A curried `String.prototype.split` with support for splitting by String, RegExp, or Function.",
   "version": "0.2.5",
   "author": "Wil Moore III <wil.moore@wilmoore.com>",
   "bugs": {
     "url": "https://github.com/wilmoore/string-split.js/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "curry2": "^0.1.0"
+  },
   "devDependencies": {
     "nodemon": "^1.3.7",
     "standard": "^3.7.2",
@@ -39,6 +41,9 @@
   "scripts": {
     "cover": "istanbul cover test.js",
     "dev": "nodemon -x 'npm run test --silent' -e 'js json'",
+    "release-major": "npm version major && git push --follow-tags && npm publish",
+    "release-minor": "npm version minor && git push --follow-tags && npm publish",
+    "release-patch": "npm version patch && git push --follow-tags && npm publish",
     "standard": "standard",
     "test": "npm run standard --silent && node test.js | tap-spec"
   }

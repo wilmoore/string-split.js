@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.3.0 - 2015-05-16
+### Added
+- add support for splitting by function.
+- add documentation for `splitBy` function.
+
+### Changed
+- use `curry2` lib.
+
 ## 0.2.5 - 2015-04-29
 ### Changed
 - update license.

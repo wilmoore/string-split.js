@@ -1,16 +1,23 @@
 'use strict'
 
-/**
+/*!
  * exports.
  */
 
-module.exports = split
+var curry2 = require('curry2')
+
+/*!
+ * exports.
+ */
+
+module.exports = curry2(split)
 
 /**
- * Curried `String.prototype.split`.
+ * A curried `String.prototype.split` with support
+ * for splitting by String, RegExp, or Function.
  *
- * @param {String|RegExp} pattern
- * Pattern used to split string.
+ * @param {String|RegExp|Function} splitBy
+ * String, RegExp, or Function to split by.
  *
  * @param {String} string
  * String to split.
@@ -19,12 +26,40 @@ module.exports = split
  * List of split string parts.
  */
 
-function split (pattern) {
-  return arguments.length > 1
-    ? splitter(pattern, arguments[1])
-    : splitter.bind(null, pattern)
+function split (splitBy, string) {
+  return (typeof splitBy === 'function')
+  ? predicate(splitBy, string)
+  : string.split(splitBy)
 }
 
-function splitter (pattern, string) {
-  return string.split(pattern)
+/**
+ * Split via predicate function.
+ *
+ * @param {Function} fn
+ * Predicate function.
+ *
+ * @param {String} string
+ * String to split.
+ *
+ * @return {Array}
+ * List of split string parts.
+ */
+
+function predicate (fn, string) {
+  var idx = -1
+  var end = string.length
+  var out = []
+  var buf = ''
+
+  while (++idx < end) {
+    if (fn(string[idx], idx) === true) {
+      if (buf) out.push(buf)
+      buf = ''
+    } else {
+      buf += string[idx]
+    }
+  }
+
+  if (buf) out.push(buf)
+  return out
 }
